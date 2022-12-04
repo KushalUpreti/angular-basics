@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddImageComponent } from './add-image.component';
+import { InputBindComponent } from './input-bind.component';
 
-describe('AddImageComponent', () => {
-  let component: AddImageComponent;
-  let fixture: ComponentFixture<AddImageComponent>;
+describe('InputBindComponent', () => {
+  let component: InputBindComponent;
+  let fixture: ComponentFixture<InputBindComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AddImageComponent ]
+      declarations: [ InputBindComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AddImageComponent);
+    fixture = TestBed.createComponent(InputBindComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

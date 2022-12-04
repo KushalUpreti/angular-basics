@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InputBindComponent } from './input-bind.component';
+import { UserTableComponent } from './user-table.component';
 
-describe('InputBindComponent', () => {
-  let component: InputBindComponent;
-  let fixture: ComponentFixture<InputBindComponent>;
+describe('UserTableComponent', () => {
+  let component: UserTableComponent;
+  let fixture: ComponentFixture<UserTableComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ InputBindComponent ]
+      declarations: [ UserTableComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(InputBindComponent);
+    fixture = TestBed.createComponent(UserTableComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

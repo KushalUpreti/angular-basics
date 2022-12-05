@@ -11,11 +11,6 @@ import { CardsComponentComponent } from './components/cards-component/cards-comp
 @NgModule({
   declarations: [AppComponent, CardsComponentComponent],
 
-import { UserTableComponent } from './components/user-table/user-table.component';
-
-@NgModule({
-  declarations: [AppComponent, UserTableComponent],
-
   imports: [
     BrowserModule,
     AppRoutingModule,

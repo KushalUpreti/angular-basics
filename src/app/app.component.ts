@@ -6,14 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  images: { image_name: ''; image_src: '' }[] = [];
+  cardList = [
+    { id: 1, title: 'One' },
+    { id: 2, title: 'Two' },
+    { id: 3, title: 'Three' },
+    { id: 4, title: 'Four' },
+  ];
 
-  addImage = (data: { image_name: ''; image_src: '' }) => {
-    this.images.push(data);
-  };
-
-  getImage = (name: string) => {
-    let data = this.images.filter((image) => image.image_name === name);
-    return data;
+  deleteCard = (id: number) => {
+    const newArray = this.cardList.filter((card) => card.id !== id);
+    this.cardList = [...newArray];
   };
 }

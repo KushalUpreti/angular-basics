@@ -5,11 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
-import { AddImageComponent } from './components/add-image/add-image.component';
-import { ViewImageComponent } from './components/view-image/view-image.component';
+import { CardsComponentComponent } from './components/cards-component/cards-component.component';
 
 @NgModule({
-  declarations: [AppComponent, AddImageComponent, ViewImageComponent],
+  declarations: [AppComponent, CardsComponentComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -1,0 +1,12 @@
+<div class="card-list">
+  <div class="card" *ngFor="let card of cardList">
+    <h1>{{ card.title }}</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+      veritatis, voluptates dolorem dolor error odit nemo ex nihil cupiditate
+      neque. Doloribus quidem qui magni recusandae impedit architecto sunt sequi
+      quae?
+    </p>
+    <button (click)="onDeleteClick(card.id)">Delete</button>
+  </div>
+</div>

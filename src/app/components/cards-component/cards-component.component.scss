@@ -1,0 +1,19 @@
+.card-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.card{
+    padding: 1em;
+    flex: 1 1 20em;
+    button{
+        border: 1px solid grey;
+        padding: 5px 10px;
+        transition: all 0.3s ease;
+        &:hover{
+            border-radius: 8px;
+            background-color: gainsboro;
+        }
+    }
+}

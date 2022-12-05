@@ -6,10 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
-import { UserTableComponent } from './components/user-table/user-table.component';
+import { CardsComponentComponent } from './components/cards-component/cards-component.component';
 
 @NgModule({
-  declarations: [AppComponent, UserTableComponent],
+  declarations: [AppComponent, CardsComponentComponent],
+
   imports: [
     BrowserModule,
     AppRoutingModule,

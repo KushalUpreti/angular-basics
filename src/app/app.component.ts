@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
+
 export class AppComponent {
   cardList = [
     { id: 1, title: 'One' },
@@ -18,3 +19,5 @@ export class AppComponent {
     this.cardList = [...newArray];
   };
 }
+export class AppComponent {}
+

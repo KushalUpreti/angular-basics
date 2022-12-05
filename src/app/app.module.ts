@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,11 +10,18 @@ import { CardsComponentComponent } from './components/cards-component/cards-comp
 
 @NgModule({
   declarations: [AppComponent, CardsComponentComponent],
+
+import { UserTableComponent } from './components/user-table/user-table.component';
+
+@NgModule({
+  declarations: [AppComponent, UserTableComponent],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -5,12 +5,16 @@ const routes: Routes = [
   {
     path: 'cards',
     loadChildren: () =>
-      import('./cards-wrapper.module').then((m) => m.CardsWrapperModule),
+      import('./forms/cards-wrapper/cards-wrapper.module').then(
+        (m) => m.CardsWrapperModule
+      ),
   },
   {
     path: 'periodic-table',
     loadChildren: () =>
-      import('./periodic-table.module').then((m) => m.PeriodicTableModule),
+      import('./forms/periodic-table/periodic-table.module').then(
+        (m) => m.PeriodicTableModule
+      ),
   },
   {
     path: '',

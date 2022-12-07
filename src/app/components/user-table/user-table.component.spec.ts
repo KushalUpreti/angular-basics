@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddImageComponent } from './add-image.component';
+import { UserTableComponent } from './user-table.component';
 
-describe('AddImageComponent', () => {
-  let component: AddImageComponent;
-  let fixture: ComponentFixture<AddImageComponent>;
+describe('UserTableComponent', () => {
+  let component: UserTableComponent;
+  let fixture: ComponentFixture<UserTableComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AddImageComponent ]
+      declarations: [ UserTableComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AddImageComponent);
+    fixture = TestBed.createComponent(UserTableComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

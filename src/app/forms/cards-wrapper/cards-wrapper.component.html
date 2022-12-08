@@ -1,0 +1,12 @@
+<section class="card-section">
+  <app-cards *ngFor="let title of cardTitles" [title]="title"></app-cards>
+</section>
+
+<div>
+  <mat-form-field appearance="fill">
+    <input matInput type="text" [(ngModel)]="currentTitle" />
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="addCard()">
+    Add Card
+  </button>
+</div>

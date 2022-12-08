@@ -6,11 +6,9 @@ import { MaterialModule } from '../../material/material.module';
 import { RouterModule, Routes } from '@angular/router';
 import { DataGridItemComponent } from '../../components/data-grid/data-grid-item/data-grid-item.component';
 
-
 const routes: Routes = [
-  {path: '', component: PeriodicTableComponent},
-  {path: 'item-details/:id', component: DataGridItemComponent,},
-  {}
+  { path: '', component: PeriodicTableComponent },
+  { path: 'item-details/:id', component: DataGridItemComponent },
 ];
 
 @NgModule({
@@ -19,11 +17,7 @@ const routes: Routes = [
     DataGridComponent,
     DataGridItemComponent,
   ],
-  imports: [
-    CommonModule,
-    MaterialModule,
-    RouterModule.forChild(routes)
-  ],
-  exports: [RouterModule]
+  imports: [CommonModule, MaterialModule, RouterModule.forChild(routes)],
+  exports: [RouterModule],
 })
-export class PeriodicTableModule { }
+export class PeriodicTableModule {}

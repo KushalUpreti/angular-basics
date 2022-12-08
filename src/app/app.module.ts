@@ -7,10 +7,21 @@ import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthService } from './services/auth.service';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [AppComponent, SpecialDirective, HeaderComponent, PagenotfoundComponent],
-  imports: [BrowserAnimationsModule, AppRoutingModule, MaterialModule],
+  declarations: [
+    AppComponent,
+    SpecialDirective,
+    HeaderComponent,
+    PagenotfoundComponent,
+  ],
+  imports: [
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    MaterialModule,
+    CommonModule,
+  ],
   providers: [AuthService],
   bootstrap: [AppComponent],
 })

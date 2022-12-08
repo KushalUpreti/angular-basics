@@ -1,23 +1,22 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { CardsWrapperComponent } from './cards-wrapper.component';
+import { FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
 import { CardsComponent } from '../../components/cards/cards.component';
 import { MaterialModule } from '../../material/material.module';
-import { RouterModule, Routes } from '@angular/router';
+import { CardsWrapperComponent } from './cards-wrapper.component';
 
-const routes: Routes = [
-  {path: '', component: CardsWrapperComponent},
-];
+const routes: Routes = [{ path: '', component: CardsWrapperComponent }];
 
 @NgModule({
-  declarations: [
-    CardsWrapperComponent,
-    CardsComponent,
-  ],
+  declarations: [CardsWrapperComponent, CardsComponent],
   imports: [
     MaterialModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    CommonModule,
+    FormsModule,
   ],
   exports: [RouterModule],
   providers: [],
 })
-export class CardsWrapperModule { }
+export class CardsWrapperModule {}

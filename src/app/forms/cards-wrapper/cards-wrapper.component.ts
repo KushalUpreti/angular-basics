@@ -3,19 +3,17 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-cards-wrapper',
   templateUrl: './cards-wrapper.component.html',
-  styleUrls: ['./cards-wrapper.component.css']
+  styleUrls: ['./cards-wrapper.component.css'],
 })
-export class CardsWrapperComponent implements OnInit {
+export class CardsWrapperComponent {
+  cardTitles: string[] = ['Maia', 'Dylan', 'Minoru', 'Amarachi', 'Ceallagh'];
+  currentTitle: '';
 
-  cardsTitle: string[] = ['Maia', 'Dylan', 'Minoru', 'Amarachi', 'Ceallagh'];
-
-  constructor() { }
-
-  ngOnInit(): void {
+  addCard() {
+    if (!this.currentTitle) {
+      return;
+    }
+    this.cardTitles.push(this.currentTitle);
+    this.currentTitle = '';
   }
-
-  addCard(title: string) {
-    this.cardsTitle.push(title);
-  }
-
 }

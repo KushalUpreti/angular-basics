@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthService } from './services/auth.service';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { PeriodicTableService } from './services/periodic-table.service';
 
 @NgModule({
   declarations: [
@@ -21,8 +23,9 @@ import { CommonModule } from '@angular/common';
     AppRoutingModule,
     MaterialModule,
     CommonModule,
+    HttpClientModule,
   ],
-  providers: [AuthService],
+  providers: [AuthService, PeriodicTableService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

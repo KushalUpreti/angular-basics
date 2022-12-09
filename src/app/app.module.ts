@@ -1,23 +1,31 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SpecialDirective } from './directives/special.directive';
+import { MaterialModule } from './material/material.module';
+import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule } from '@angular/material/card';
-import { UserTableComponent } from './components/user-table/user-table.component';
+import { AuthService } from './services/auth.service';
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { PeriodicTableService } from './services/periodic-table.service';
 
 @NgModule({
-  declarations: [AppComponent, UserTableComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatCardModule,
-    FormsModule,
+  declarations: [
+    AppComponent,
+    SpecialDirective,
+    HeaderComponent,
+    PagenotfoundComponent,
   ],
-  providers: [],
+  imports: [
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    MaterialModule,
+    CommonModule,
+    HttpClientModule,
+  ],
+  providers: [AuthService, PeriodicTableService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
